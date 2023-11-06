@@ -11,6 +11,7 @@ export const metadata = {
 
 export default async function RootLayout({ children }) {
   const res = await fetch("http://localhost:8085/api/posts/");
+
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
